@@ -13,9 +13,8 @@
     int 0x10
     
     ; zero out a sector of the post-MBR storage in RAM, just in case it isn't zero
-    xor bx, bx
     xor ax, ax
-    mov es, bx
+    mov es, ax
     mov di, 0x7e00
     mov cx, 512
     rep stosb
