@@ -211,7 +211,7 @@ plot_pixel:
     test di, di
     js .skip
     
-    ; pixel_index = y * 200 + x
+    ; pixel_index = y * 320 + x
     imul di, di, 320
     add di, si
     
